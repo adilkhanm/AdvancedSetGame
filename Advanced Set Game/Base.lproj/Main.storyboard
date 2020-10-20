@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Advanced_Set_Game" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="7H8-Eg-Six">
+                                <rect key="frame" x="10.5" y="729.5" width="393" height="122.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lKP-Op-COI">
+                                        <rect key="frame" x="0.0" y="0.0" width="127.5" height="122.5"/>
+                                        <color key="backgroundColor" red="0.050980392156862744" green="0.23137254901960785" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="New Game">
+                                            <color key="titleColor" red="0.98039215690000003" green="0.94117647059999998" blue="0.79215686269999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onNewGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2wZ-WB-X3o"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sets Collected: 0" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tw2-V4-Ees">
+                                        <rect key="frame" x="132.5" y="0.0" width="128" height="122.5"/>
+                                        <color key="backgroundColor" red="0.97305089239999998" green="0.86699432830000001" blue="0.47644005150000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <color key="textColor" red="0.92941176469999998" green="0.41568627450000001" blue="0.35294117650000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="6lS-OS-wRK">
+                                        <rect key="frame" x="265.5" y="0.0" width="127.5" height="122.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8hg-ua-CQa">
+                                                <rect key="frame" x="0.0" y="0.0" width="127.5" height="58.5"/>
+                                                <color key="backgroundColor" red="0.92941176470588238" green="0.41568627450980389" blue="0.3529411764705882" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <state key="normal" title="Ask 3 cards">
+                                                    <color key="titleColor" red="0.98039215686274506" green="0.94117647058823528" blue="0.792156862745098" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="onAskMoreCards:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zp7-VC-EWZ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xba-bg-g8R">
+                                                <rect key="frame" x="0.0" y="63.5" width="127.5" height="59"/>
+                                                <color key="backgroundColor" red="0.92941176470588238" green="0.41568627450980389" blue="0.3529411764705882" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <state key="normal" title="Hints">
+                                                    <color key="titleColor" red="0.98039215686274506" green="0.94117647058823528" blue="0.792156862745098" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="onHintsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Duq-AH-59p"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </stackView>
+                            <view contentMode="redraw" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f80-vQ-0gi" customClass="MainView" customModule="Advanced_Set_Game" customModuleProvider="target">
+                                <rect key="frame" x="272" y="69" width="1366" height="833.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98039215686274506" green="0.94117647058823528" blue="0.792156862745098" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="7H8-Eg-Six" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.95" id="BFA-b3-9Kt"/>
+                            <constraint firstItem="f80-vQ-0gi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Pnj-Gm-4NC"/>
+                            <constraint firstItem="f80-vQ-0gi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Qfb-gO-AeX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="f80-vQ-0gi" secondAttribute="trailing" id="VRV-S9-DFE"/>
+                            <constraint firstItem="7H8-Eg-Six" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.15" id="bST-it-aqZ"/>
+                            <constraint firstItem="7H8-Eg-Six" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="iD3-vr-EkI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7H8-Eg-Six" secondAttribute="bottom" constant="10" id="l1O-FC-nTB"/>
+                            <constraint firstItem="7H8-Eg-Six" firstAttribute="top" secondItem="f80-vQ-0gi" secondAttribute="bottom" constant="10" id="tZn-Lw-9TK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="askMoreCardsButton" destination="8hg-ua-CQa" id="uFj-My-yow"/>
+                        <outlet property="hintsButton" destination="Xba-bg-g8R" id="xDt-Zq-fbp"/>
+                        <outlet property="mainView" destination="f80-vQ-0gi" id="xj1-63-mYJ"/>
+                        <outlet property="newGameButton" destination="lKP-Op-COI" id="6KB-Lx-QTN"/>
+                        <outlet property="setsCollectedLabel" destination="tw2-V4-Ees" id="kto-6L-AQg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+</document>
